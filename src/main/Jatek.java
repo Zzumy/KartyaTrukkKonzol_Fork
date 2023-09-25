@@ -1,4 +1,6 @@
-package kartyatrukkkonzolon;
+package main;
+
+import view.KartyaTrukk;
 
 public class Jatek {
 

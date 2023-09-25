@@ -1,4 +1,4 @@
-package kartyatrukkkonzolon;
+package model;
 
 public final class Pakli {
 
@@ -9,6 +9,10 @@ public final class Pakli {
         feltolt();
     }
 
+    public Kartya[] getKartyak() {
+        return kartyak;
+    }
+
     public void feltolt() {
         String[] szinek = {"P", "T", "Z", "M"};
         String[] ertekek = {"Ász", "Kir", "Fel", "X", "IX", "VIII"};
@@ -16,15 +20,6 @@ public final class Pakli {
         for (String szin : szinek) {
             for (int e = 0; e < ertekek.length && i < kartyak.length; e++) {
                 kartyak[i++] = new Kartya(szin + "_" + ertekek[e]);
-            }
-        }
-    }
-
-    public void kirak() {
-        for (int i = 1; i < kartyak.length; i++) {
-            System.out.printf("%-8s", kartyak[i]);
-            if (i % 3 == 0) {
-                System.out.println("");
             }
         }
     }
@@ -57,8 +52,8 @@ public final class Pakli {
         kartyak = ujPakli;
     }
 
-    public void ezVolt() {
-        System.out.println("A választott lap: " + kartyak[11]);
+    public Kartya ezVolt() {
+        return kartyak[11];
     }
 
 }
