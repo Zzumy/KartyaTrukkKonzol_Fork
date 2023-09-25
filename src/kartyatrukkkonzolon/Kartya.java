@@ -2,7 +2,7 @@ package kartyatrukkkonzolon;
 
 public class Kartya {
     
-    private String leiras;
+    private final String leiras;
     
     public Kartya(String leiras) {
         this.leiras = leiras;

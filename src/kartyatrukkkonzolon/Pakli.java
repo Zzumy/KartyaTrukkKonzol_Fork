@@ -32,27 +32,27 @@ public final class Pakli {
     public void kever(int oszlop) {
         Kartya[] ujPakli = new Kartya[22];
         switch (oszlop) {
-            case 1:
+            case 1 -> {
                 for (int i = 1; i <= 7; i++) {
                     ujPakli[i] = kartyak[20 - (i - 1) * 3];
                     ujPakli[i + 7] = kartyak[19 - (i - 1) * 3];
                     ujPakli[i + 14] = kartyak[21 - (i - 1) * 3];
                 }
-                break;
-            case 2:
+            }
+            case 2 -> {
                 for (int i = 1; i <= 7; i++) {
                     ujPakli[i] = kartyak[19 - (i - 1) * 3];
                     ujPakli[i + 7] = kartyak[20 - (i - 1) * 3];
                     ujPakli[i + 14] = kartyak[21 - (i - 1) * 3];
                 }
-                break;
-            case 3:
+            }
+            case 3 -> {
                 for (int i = 1; i <= 7; i++) {
                     ujPakli[i] = kartyak[19 - (i - 1) * 3];
                     ujPakli[i + 7] = kartyak[21 - (i - 1) * 3];
                     ujPakli[i + 14] = kartyak[20 - (i - 1) * 3];
                 }
-                break;
+            }
         }
         kartyak = ujPakli;
     }
