@@ -1,6 +1,6 @@
 package kartyatrukkkonzolon;
 
-public class Pakli {
+public final class Pakli {
 
     private Kartya[] kartyak;
 
